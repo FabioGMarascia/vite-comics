@@ -22,10 +22,13 @@ export default {
 		</div>
 	</header>
 
-	<div class="container">
+	<main>
 		<AppMain />
+	</main>
+
+	<footer>
 		<AppFooter />
-	</div>
+	</footer>
 </template>
 
 <style scoped></style>

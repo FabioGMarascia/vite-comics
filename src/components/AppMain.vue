@@ -11,8 +11,21 @@ export default {
 </script>
 
 <template>
-	<AppMainContent />
-	<AppMainBlueRow />
+	<div class="mainContentBox deb bg-black">
+		<div class="container">
+			<AppMainContent />
+		</div>
+	</div>
+
+	<div class="mainBlueRowBox deb">
+		<div class="container">
+			<AppMainBlueRow />
+		</div>
+	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.mainBlueRowBox {
+	background-color: #0282f9;
+}
+</style>
