@@ -50,16 +50,16 @@ export default {
 </script>
 
 <template>
-	<div class="row py-3">
-		<div class="col-3">
+	<div class="row my-4">
+		<div class="col-3 my-auto">
 			<img src="../assets/dc-logo.png" />
 		</div>
 
-		<div class="col-9 my-auto text-end px-0">
+		<div class="col-9 px-0 text-end my-auto">
 			<a
 				v-for="link in links"
 				:href="link.url"
-				class="mx-3 text-decoration-none text-black fw-bold">
+				class="mx-3 text-decoration-none fw-bold my-link">
 				{{ link.name }}</a
 			>
 		</div>
@@ -73,5 +73,12 @@ img {
 
 a {
 	font-size: 0.8rem;
+	color: black;
+	padding: 3.2rem 0;
+}
+
+.my-link:hover {
+	color: #0282f9;
+	border-bottom: 5px solid #0282f9;
 }
 </style>
