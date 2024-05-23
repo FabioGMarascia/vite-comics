@@ -3,6 +3,7 @@ export default {
 	data() {
 		return {
 			comicsLinks: [`Characters`, `Comics`, `Movies`, `Tv`, `Games`, `Videos`, `News`],
+			shopLinks: [`Shop DC`, `Shop DC Collectibles`],
 			dcLinks: [
 				`Terms Of Use`,
 				`Privacy policy (New)`,
@@ -17,17 +18,16 @@ export default {
 				`Contact Us`,
 			],
 			sitesLinks: [`DC`, `MAD Magazine`, `DC Kids`, `DC Universe`, `DC Power Vista`],
-			shopLinks: [`Shop DC`, `Shop DC Collectibles`],
 		};
 	},
 };
 </script>
 
 <template>
-	<div class="row">
-		<div class="col-6 deb">
-			<div class="row text-white">
-				<div class="col-3 deb pe-0">
+	<div class="row justify-content-between">
+		<div class="col-6">
+			<div class="row text-white pt-5 ps-3">
+				<div class="col-2 px-0">
 					<span class="fs-6 fw-bold">DC COMICS</span>
 
 					<ul class="p-0 mt-2">
@@ -35,9 +35,17 @@ export default {
 							{{ link }}
 						</li>
 					</ul>
+
+					<span class="fs-6 fw-bold">SHOP</span>
+
+					<ul class="p-0 mt-2">
+						<li v-for="link in shopLinks" class="list-group-item text-white-50 lh-base">
+							{{ link }}
+						</li>
+					</ul>
 				</div>
 
-				<div class="col-2 deb px-0">
+				<div class="col-2 px-0 mx-3">
 					<span class="fs-6 fw-bold">DC</span>
 
 					<ul class="p-0 mt-2">
@@ -47,7 +55,7 @@ export default {
 					</ul>
 				</div>
 
-				<div class="col-2 deb px-0">
+				<div class="col-2 px-0">
 					<span class="fs-6 fw-bold">SITES</span>
 
 					<ul class="p-0 mt-2">
@@ -58,10 +66,16 @@ export default {
 				</div>
 			</div>
 		</div>
-		<div class="col-6 deb text-end">
-			<img src="../assets/dc-logo-bg.png" />
-		</div>
+
+		<div class="col-5 footerTopRight deb text-end"></div>
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.footerTopRight {
+	background-image: url(../assets/dc-logo-bg.png);
+	background-size: cover;
+	background-position: center;
+	height: 22rem;
+}
+</style>

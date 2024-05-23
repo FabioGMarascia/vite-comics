@@ -26,9 +26,6 @@ export default {
 			],
 		};
 	},
-	mounted() {
-		console.log(this.cards[0].src);
-	},
 };
 </script>
 

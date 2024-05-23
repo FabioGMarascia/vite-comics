@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-	<div class="footerTopBox deb">
+	<div class="footerTopBox">
 		<div class="container">
 			<AppFooterTop />
 		</div>
@@ -28,6 +28,7 @@ export default {
 .footerTopBox {
 	background-image: url(../assets/footer-bg.jpg);
 	background-size: cover;
+	height: 22rem;
 }
 
 .footerBottomBox {
