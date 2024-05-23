@@ -16,9 +16,16 @@ export default {
 </script>
 
 <template>
-	<AppHeader />
-	<AppMain />
-	<AppFooter />
+	<header class="deb">
+		<div class="container">
+			<AppHeader />
+		</div>
+	</header>
+
+	<div class="container">
+		<AppMain />
+		<AppFooter />
+	</div>
 </template>
 
 <style scoped></style>
