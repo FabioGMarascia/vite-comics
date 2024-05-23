@@ -38,4 +38,8 @@ export default {
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+img:hover {
+	cursor: pointer;
+}
+</style>
