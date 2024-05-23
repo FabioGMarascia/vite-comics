@@ -50,12 +50,12 @@ export default {
 </script>
 
 <template>
-	<div class="row deb py-3">
+	<div class="row py-3">
 		<div class="col-3">
 			<img src="../assets/dc-logo.png" />
 		</div>
 
-		<div class="col-9 deb my-auto text-end px-0">
+		<div class="col-9 my-auto text-end px-0">
 			<a
 				v-for="link in links"
 				:href="link.url"

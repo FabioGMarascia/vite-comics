@@ -67,7 +67,7 @@ export default {
 			</div>
 		</div>
 
-		<div class="col-5 footerTopRight deb text-end"></div>
+		<div class="col-5 footerTopRight text-end"></div>
 	</div>
 </template>
 

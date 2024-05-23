@@ -5,23 +5,23 @@ export default {
 			cards: [
 				{
 					title: `DIGITAL COMICS`,
-					src: `../assets/buy-comics-digital-comics.png`,
+					src: `/src/assets/buy-comics-digital-comics.png`,
 				},
 				{
 					title: `DC MERCHANDISE`,
-					src: `../assets/buy-comics-merchandise.png`,
+					src: `/src/assets/buy-comics-merchandise.png`,
 				},
 				{
 					title: `SUBSCRIPTION`,
-					src: `../assets/buy-comics-subscription.png`,
+					src: `/src/assets/buy-comics-subscriptions.png`,
 				},
 				{
 					title: `COMIC SHOP LOCATOR`,
-					src: `../assets/buy-comics-shop-locator.png`,
+					src: `/src/assets/buy-comics-shop-locator.png`,
 				},
 				{
 					title: `DC POWER VISA`,
-					src: `../assets/buy-dc-power-visa.svg`,
+					src: `/src/assets/buy-dc-power-visa.svg`,
 				},
 			],
 		};
@@ -30,11 +30,11 @@ export default {
 </script>
 
 <template>
-	<div class="row py-5 deb justify-content-center px-5">
-		<div v-for="card in cards" class="col deb mx-1">
-			<div class="row">
+	<div class="row py-5 justify-content-center">
+		<div v-for="card in cards" class="col-2 mx-3 deb px-0">
+			<div class="row text-center deb mx-0 align-items-center">
 				<div class="col-4 px-0">
-					<img :src="card.src" />
+					<img :src="card.src" class="my-auto" />
 				</div>
 
 				<div class="col-8 px-0 fw-bold text-white my-auto ps-1">
@@ -47,6 +47,7 @@ export default {
 
 <style scoped>
 img {
-	width: 100%;
+	width: 3rem;
+	height: 100%;
 }
 </style>

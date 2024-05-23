@@ -17,7 +17,7 @@ export default {
 		</div>
 	</div>
 
-	<div class="footerBottomBox deb">
+	<div class="footerBottomBox">
 		<div class="container">
 			<AppFooterBottom />
 		</div>

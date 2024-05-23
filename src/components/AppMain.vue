@@ -11,13 +11,13 @@ export default {
 </script>
 
 <template>
-	<div class="mainContentBox deb bg-black">
+	<div class="mainContentBox bg-black">
 		<div class="container">
 			<AppMainContent />
 		</div>
 	</div>
 
-	<div class="mainBlueRowBox deb">
+	<div class="mainBlueRowBox">
 		<div class="container">
 			<AppMainBlueRow />
 		</div>

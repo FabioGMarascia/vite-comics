@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-	<header class="deb">
+	<header>
 		<div class="container">
 			<AppHeader />
 		</div>
