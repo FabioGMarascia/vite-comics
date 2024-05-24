@@ -88,7 +88,7 @@ export default {
 </script>
 
 <template>
-	<span class="comics-list-title text-white fw-bold fs-5 px-4 py-2"> CURRENT SERIES </span>
+	<span id="2" class="comics-list-title text-white fw-bold fs-5 px-4 py-2"> CURRENT SERIES </span>
 
 	<div class="row px-3">
 		<ComicsListCard v-for="comic in comics" :element="comic" />
