@@ -88,10 +88,25 @@ export default {
 </script>
 
 <template>
-	<span class="text-white fw-bold fs-5 px-4 py-3 bg-primary">CURRENT SERIES</span>
-	<div class="row">
+	<span class="comics-list-title text-white fw-bold fs-5 px-4 py-2"> CURRENT SERIES </span>
+
+	<div class="row px-3">
 		<ComicsListCard v-for="comic in comics" :element="comic" />
+	</div>
+
+	<div class="text-center">
+		<button class="load-btn text-white border-0 fw-bold fs-6 px-5 py-2 mt-4">LOAD MORE</button>
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.comics-list-title,
+.load-btn {
+	background-color: #0282f9;
+}
+
+.comics-list-title {
+	position: absolute;
+	top: -1.5rem;
+}
+</style>

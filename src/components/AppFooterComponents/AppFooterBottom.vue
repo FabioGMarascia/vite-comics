@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-	<div class="row py-5 text-white">
+	<div class="row py-4 text-white">
 		<div class="col-6">
 			<button class="btn border border-2 border-primary text-white rounded-0">
 				SIGN-UP NOW!
@@ -31,7 +31,7 @@ export default {
 
 		<div class="col-6">
 			<div class="row">
-				<div class="col-7 text-end px-0 my-auto">
+				<div class="col-7 text-end px-0 my-auto pt-1">
 					<span class="fw-bold fs-5 my-blue"> FOLLOW US </span>
 				</div>
 

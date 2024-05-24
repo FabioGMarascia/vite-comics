@@ -18,7 +18,7 @@ export default {
 		</div>
 	</div>
 
-	<div class="footerBottomBox">
+	<div class="footerBottomBox py-2">
 		<div class="container">
 			<AppFooterBottom />
 		</div>

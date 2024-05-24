@@ -18,9 +18,7 @@ export default {
 
 <template>
 	<header>
-		<div class="container">
-			<AppHeader />
-		</div>
+		<AppHeader />
 	</header>
 
 	<main>

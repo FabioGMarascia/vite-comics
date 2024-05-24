@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-	<div class="mainContentBox">
+	<div class="mainContentBox position-relative py-4">
 		<div class="container">
 			<AppMainContent />
 		</div>
