@@ -32,12 +32,12 @@ export default {
 <template>
 	<div class="row py-5 justify-content-center">
 		<div v-for="card in cards" class="col-2 mx-3 px-0">
-			<div class="d-flex text-center h-100">
+			<div class="d-flex h-100 text-end">
 				<div class="col-4 px-0 my-auto">
 					<img :src="card.src" class="img-fluid" />
 				</div>
 
-				<div class="col-8 px-0 fw-bold text-white my-auto">
+				<div class="col-8 px-0 fw-bold text-white my-auto text-center">
 					<span>{{ card.title }}</span>
 				</div>
 			</div>
@@ -47,6 +47,6 @@ export default {
 
 <style scoped>
 img {
-	height: 5rem;
+	height: 4rem;
 }
 </style>

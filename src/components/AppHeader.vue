@@ -50,7 +50,7 @@ export default {
 </script>
 
 <template>
-	<div class="row my-4">
+	<div class="row my-3">
 		<div class="col-3 my-auto">
 			<img src="../assets/dc-logo.png" />
 		</div>
@@ -74,7 +74,7 @@ img {
 a {
 	font-size: 0.8rem;
 	color: black;
-	padding: 3.2rem 0;
+	padding: 2.75rem 0;
 }
 
 .my-link:hover {

@@ -25,7 +25,7 @@ export default {
 		<div class="col-6">
 			<div class="row">
 				<div class="col-7 text-end px-0 my-auto">
-					<span class="fw-bold fs-5 text-primary"> FOLLOW US </span>
+					<span class="fw-bold fs-5 my-blue"> FOLLOW US </span>
 				</div>
 
 				<div class="col-5 px-0">
@@ -41,5 +41,9 @@ export default {
 <style scoped>
 img:hover {
 	cursor: pointer;
+}
+
+.my-blue {
+	color: #0282f9;
 }
 </style>
