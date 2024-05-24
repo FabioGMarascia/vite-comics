@@ -32,7 +32,9 @@ export default {
 					<span class="fs-6 fw-bold">DC COMICS</span>
 
 					<ul class="p-0 mt-2">
-						<li v-for="link in comicsLinks" class="list-group-item text-white-50 lh-base">
+						<li
+							v-for="link in comicsLinks"
+							class="list-group-item text-white-50 lh-base my-fs">
 							{{ link }}
 						</li>
 					</ul>
@@ -40,7 +42,7 @@ export default {
 					<span class="fs-6 fw-bold">SHOP</span>
 
 					<ul class="p-0 mt-2">
-						<li v-for="link in shopLinks" class="list-group-item text-white-50 lh-base">
+						<li v-for="link in shopLinks" class="list-group-item text-white-50 lh-base my-fs">
 							{{ link }}
 						</li>
 					</ul>
@@ -50,7 +52,7 @@ export default {
 					<span class="fs-6 fw-bold">DC</span>
 
 					<ul class="p-0 mt-2">
-						<li v-for="link in dcLinks" class="list-group-item text-white-50">
+						<li v-for="link in dcLinks" class="list-group-item text-white-50 my-fs">
 							{{ link }}
 						</li>
 					</ul>
@@ -60,7 +62,7 @@ export default {
 					<span class="fs-6 fw-bold">SITES</span>
 
 					<ul class="p-0 mt-2">
-						<li v-for="link in sitesLinks" class="list-group-item text-white-50">
+						<li v-for="link in sitesLinks" class="list-group-item text-white-50 my-fs">
 							{{ link }}
 						</li>
 					</ul>
@@ -78,5 +80,9 @@ export default {
 	background-size: cover;
 	background-position: center;
 	height: 22rem;
+}
+
+.my-fs {
+	font-size: 0.72rem;
 }
 </style>

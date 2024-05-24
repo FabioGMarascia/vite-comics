@@ -40,12 +40,12 @@ export default {
 	<div class="row py-5 justify-content-center">
 		<div v-for="card in cards" class="col-2 mx-3 px-0">
 			<div class="d-flex h-100 text-end">
-				<div class="col-4 px-0 my-auto">
+				<div class="col-4 px-0 my-auto deb">
 					<img :src="getImg(card.src)" class="img-fluid" />
 				</div>
 
-				<div class="col-8 px-0 fw-bold text-white my-auto text-center">
-					<span>{{ card.title }}</span>
+				<div class="col-8 px-0 fw-bold text-white my-auto text-center deb">
+					<span class="my-fs">{{ card.title }}</span>
 				</div>
 			</div>
 		</div>
@@ -55,5 +55,9 @@ export default {
 <style scoped>
 img {
 	height: 4rem;
+}
+
+.my-fs {
+	font-size: 0.76rem;
 }
 </style>
