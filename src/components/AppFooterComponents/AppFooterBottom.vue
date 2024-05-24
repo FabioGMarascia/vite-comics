@@ -1,5 +1,6 @@
 <script>
 export default {
+	name: "AppFooterBottom",
 	data() {
 		return {
 			icons: [

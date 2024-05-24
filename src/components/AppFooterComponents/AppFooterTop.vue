@@ -1,5 +1,6 @@
 <script>
 export default {
+	name: "AppFooterTop",
 	data() {
 		return {
 			comicsLinks: [`Characters`, `Comics`, `Movies`, `Tv`, `Games`, `Videos`, `News`],

@@ -1,5 +1,6 @@
 <script>
 export default {
+	name: "AppMainBlueRow",
 	data() {
 		return {
 			cards: [

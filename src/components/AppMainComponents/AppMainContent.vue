@@ -1,9 +1,19 @@
-<script></script>
+<script>
+import ComicsList from "./MainContentComponents/ComicsList.vue";
+
+export default {
+	name: "AppMainContent",
+	components: {
+		ComicsList,
+	},
+	data() {
+		return {};
+	},
+};
+</script>
 
 <template>
-	<div class="row py-5 text-white fs-4 fw-bold">
-		<span> --> Content goes here <-- </span>
-	</div>
+	<ComicsList class="py-5" />
 </template>
 
 <style scoped></style>

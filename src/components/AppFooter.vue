@@ -3,6 +3,7 @@ import AppFooterTop from "./AppFooterComponents/AppFooterTop.vue";
 import AppFooterBottom from "./AppFooterComponents/AppFooterBottom.vue";
 
 export default {
+	name: "AppFooter",
 	components: {
 		AppFooterTop,
 		AppFooterBottom,

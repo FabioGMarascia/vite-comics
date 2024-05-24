@@ -3,6 +3,7 @@ import AppMainContent from "./AppMainComponents/AppMainContent.vue";
 import AppMainBlueRow from "./AppMainComponents/AppMainBlueRow.vue";
 
 export default {
+	name: "AppMain",
 	components: {
 		AppMainContent,
 		AppMainBlueRow,
@@ -11,7 +12,7 @@ export default {
 </script>
 
 <template>
-	<div class="mainContentBox bg-black">
+	<div class="mainContentBox">
 		<div class="container">
 			<AppMainContent />
 		</div>
@@ -25,6 +26,10 @@ export default {
 </template>
 
 <style scoped>
+.mainContentBox {
+	background-color: #1c1c1c;
+}
+
 .mainBlueRowBox {
 	background-color: #0282f9;
 }
