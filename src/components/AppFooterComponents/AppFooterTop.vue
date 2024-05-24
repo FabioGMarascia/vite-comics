@@ -73,7 +73,7 @@ export default {
 
 <style scoped>
 .footerTopRight {
-	background-image: url(../assets/dc-logo-bg.png);
+	background-image: url(../../assets/dc-logo-bg.png);
 	background-size: cover;
 	background-position: center;
 	height: 22rem;
