@@ -1,6 +1,6 @@
 <script>
-import AppMainContent from "./AppMainContent.vue";
-import AppMainBlueRow from "./AppMainBlueRow.vue";
+import AppMainContent from "./AppMainComponents/AppMainContent.vue";
+import AppMainBlueRow from "./AppMainComponents/AppMainBlueRow.vue";
 
 export default {
 	components: {

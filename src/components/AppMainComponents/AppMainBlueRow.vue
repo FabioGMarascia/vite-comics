@@ -5,26 +5,32 @@ export default {
 			cards: [
 				{
 					title: `DIGITAL COMICS`,
-					src: `/src/assets/buy-comics-digital-comics.png`,
+					src: `buy-comics-digital-comics.png`,
 				},
 				{
 					title: `DC MERCHANDISE`,
-					src: `/src/assets/buy-comics-merchandise.png`,
+					src: `buy-comics-merchandise.png`,
 				},
 				{
 					title: `SUBSCRIPTION`,
-					src: `/src/assets/buy-comics-subscriptions.png`,
+					src: `buy-comics-subscriptions.png`,
 				},
 				{
 					title: `COMIC SHOP LOCATOR`,
-					src: `/src/assets/buy-comics-shop-locator.png`,
+					src: `/buy-comics-shop-locator.png`,
 				},
 				{
 					title: `DC POWER VISA`,
-					src: `/src/assets/buy-dc-power-visa.svg`,
+					src: `buy-dc-power-visa.svg`,
 				},
 			],
 		};
+	},
+	methods: {
+		getImg(path) {
+			let risultato = new URL(`../../assets/` + path, import.meta.url);
+			return risultato.href;
+		},
 	},
 };
 </script>
@@ -34,7 +40,7 @@ export default {
 		<div v-for="card in cards" class="col-2 mx-3 px-0">
 			<div class="d-flex h-100 text-end">
 				<div class="col-4 px-0 my-auto">
-					<img :src="card.src" class="img-fluid" />
+					<img :src="getImg(card.src)" class="img-fluid" />
 				</div>
 
 				<div class="col-8 px-0 fw-bold text-white my-auto text-center">

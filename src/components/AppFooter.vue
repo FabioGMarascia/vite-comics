@@ -1,6 +1,6 @@
 <script>
-import AppFooterTop from "./AppFooterTop.vue";
-import AppFooterBottom from "./AppFooterBottom.vue";
+import AppFooterTop from "./AppFooterComponents/AppFooterTop.vue";
+import AppFooterBottom from "./AppFooterComponents/AppFooterBottom.vue";
 
 export default {
 	components: {

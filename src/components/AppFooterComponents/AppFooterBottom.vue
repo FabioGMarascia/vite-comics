@@ -3,13 +3,19 @@ export default {
 	data() {
 		return {
 			icons: [
-				`/src/assets/footer-facebook.png`,
-				`/src/assets/footer-twitter.png`,
-				`/src/assets/footer-youtube.png`,
-				`/src/assets/footer-pinterest.png`,
-				`/src/assets/footer-periscope.png`,
+				`footer-facebook.png`,
+				`footer-twitter.png`,
+				`footer-youtube.png`,
+				`footer-pinterest.png`,
+				`footer-periscope.png`,
 			],
 		};
+	},
+	methods: {
+		getImg(path) {
+			let risultato = new URL(`../../assets/` + path, import.meta.url);
+			return risultato.href;
+		},
 	},
 };
 </script>
@@ -30,7 +36,7 @@ export default {
 
 				<div class="col-5 px-0">
 					<div class="d-flex justify-content-end">
-						<img v-for="icon in icons" :src="icon" class="mx-2" />
+						<img v-for="icon in icons" :src="getImg(icon)" class="mx-2" />
 					</div>
 				</div>
 			</div>
