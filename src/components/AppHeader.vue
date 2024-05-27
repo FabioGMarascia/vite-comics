@@ -3,7 +3,7 @@ import NavBar from "./AppHeaderComponents/NavBar.vue";
 import Jumbotrone from "./AppHeaderComponents/Jumbotrone.vue";
 
 export default {
-	name: "Header",
+	name: "AppHeader",
 	components: {
 		NavBar,
 		Jumbotrone,
